@@ -1,0 +1,21 @@
+defaultNamespace: external-secrets-operator
+
+# namespaceLabels:
+#   pod-security.kubernetes.io/enforce: restricted
+#   pod-security.kubernetes.io/enforce-version: latest
+#   pod-security.kubernetes.io/audit: restricted
+#   pod-security.kubernetes.io/audit-version: latest
+#   pod-security.kubernetes.io/warn: restricted
+#   pod-security.kubernetes.io/wrn-version: latest
+
+labels:
+  app: external-secrets-operator
+
+# Custom helm options
+helm:
+  releaseName: external-secrets-operator
+  chart: external-secrets-operator
+  repo: oci://dp.apps.rancher.io/charts
+  version: 2.11.0
+  values:
+    installCRDs: true
