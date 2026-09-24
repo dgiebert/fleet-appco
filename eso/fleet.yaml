@@ -19,3 +19,6 @@ helm:
   version: 2.11.0
   values:
     installCRDs: true
+    global:
+      imageRegistry: ""
+      imagePullSecrets: ["application-collection"]
