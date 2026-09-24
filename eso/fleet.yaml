@@ -15,7 +15,7 @@ labels:
 helm:
   releaseName: external-secrets-operator
   chart: external-secrets-operator
-  repo: oci://dp.apps.rancher.io/charts
+  repo: oci://dp.apps.rancher.io/charts/external-secrets-operator
   version: 2.11.0
   values:
     installCRDs: true
